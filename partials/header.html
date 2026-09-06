@@ -1,0 +1,99 @@
+<!-- ====================================================== Utility strip -->
+<div class="bg-gw-red text-white text-[13.5px]">
+  <div class="container flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
+    <p class="flex items-center gap-2 font-medium">
+      <svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#i-pin"/></svg>
+      <span>Shop 2, Gateway Centre, Ring Road East, Alberton</span>
+    </p>
+    <div class="flex items-center gap-5">
+      <span id="open-status" class="font-semibold tracking-wide whitespace-nowrap">&nbsp;</span>
+      <a class="tap-sm gap-2 font-semibold hover:underline underline-offset-4 tabular"
+         href="tel:+27118694478">
+        <svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#i-phone"/></svg>
+        011 869 4478
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================= Header -->
+<header id="site-header" class="site-header">
+  <div class="container flex items-center gap-4 py-3">
+
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="Goldwagen Alberton — home">
+      <img src="mediaa/logo-transparent.png" alt="Goldwagen" width="167" height="63"
+           class="h-9 w-auto md:h-10" decoding="async">
+      <span class="hidden sm:block border-l border-white/15 pl-3 leading-none">
+        <span class="block font-display text-[22px] font-bold tracking-wide">Alberton</span>
+        <span class="block text-[11px] tracking-[.22em] text-muted uppercase">Vehicle Spares</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-5 xl:gap-7 ml-auto" aria-label="Primary">
+      <a class="nav-link" data-nav="parts"    href="parts.html">Parts</a>
+      <a class="nav-link" data-nav="vehicles" href="vehicles.html">Vehicles</a>
+      <a class="nav-link" data-nav="brands"   href="brands.html">Brands</a>
+      <a class="nav-link" data-nav="about"    href="about.html">About</a>
+      <a class="nav-link" data-nav="reviews"  href="reviews.html">Reviews</a>
+      <a class="nav-link" data-nav="faq"      href="faq.html">FAQ</a>
+      <a class="nav-link" data-nav="visit"    href="visit.html">Visit&nbsp;Us</a>
+    </nav>
+
+    <div class="flex items-center gap-2 ml-auto lg:ml-0">
+      <a class="btn btn-primary btn-sm hidden md:inline-flex" data-nav="quote" href="quote.html">
+        Get a Quote
+      </a>
+      <button id="nav-open" type="button"
+              class="lg:hidden grid place-items-center w-11 h-11 rounded-lg border border-white/15 text-white hover:bg-white/10"
+              aria-expanded="false" aria-controls="nav-drawer">
+        <svg class="w-6 h-6" aria-hidden="true"><use href="#i-menu"/></svg>
+        <span class="sr-only">Open menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ====================================================== Mobile drawer -->
+<div id="nav-drawer" class="drawer" data-open="false">
+  <div class="drawer-scrim"></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="flex items-center justify-between mb-6">
+      <img src="mediaa/logo-transparent.png" alt="" width="167" height="63" class="h-8 w-auto">
+      <button id="nav-close" type="button"
+              class="grid place-items-center w-11 h-11 rounded-lg border border-white/15 hover:bg-white/10">
+        <svg class="w-6 h-6" aria-hidden="true"><use href="#i-close"/></svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+    </div>
+
+    <nav aria-label="Mobile">
+      <a class="drawer-link" data-nav="home"     href="index.html">Home <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="parts"    href="parts.html">Parts <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="vehicles" href="vehicles.html">Vehicles <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="brands"   href="brands.html">Brands <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="about"    href="about.html">About <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="reviews"  href="reviews.html">Reviews <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="faq"      href="faq.html">FAQ <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="drawer-link" data-nav="visit"    href="visit.html">Visit Us <svg class="w-5 h-5 text-gw-soft" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </nav>
+
+    <div class="grid gap-3 mt-8">
+      <a class="btn btn-primary btn-block" data-nav="quote" href="quote.html">Get a Quote</a>
+      <a class="btn btn-ghost btn-block tabular" href="tel:+27118694478">
+        <svg class="w-5 h-5" aria-hidden="true"><use href="#i-phone"/></svg>
+        011 869 4478
+      </a>
+    </div>
+
+    <dl class="mt-8 text-sm text-muted grid gap-3">
+      <div>
+        <dt class="font-semibold text-white">Trading hours</dt>
+        <dd class="tabular">Mon–Fri 08:00–17:00 · Sat 08:00–13:00 · Sun closed</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-white">Find us</dt>
+        <dd>Shop 2, Gateway Centre, Ring Road East, Alberton, 1449</dd>
+      </div>
+    </dl>
+  </div>
+</div>
